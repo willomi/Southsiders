@@ -1,0 +1,69 @@
+---
+title: "Git Notes"
+format: html
+editor: visual
+---
+
+## Github Repo for Southsiers Fantasy Football
+
+Southsiders GitHub public repo, <https://github.com/willomi/Southsiders.git>.
+
+### Add Remote in R Studio:
+
+In R Studio, open the Terminal tab (found at the bottom pane).
+Run the following command to add the remote repository:
+
+'git remote add origin https://github.com/willomi/Southsiders.git'
+
+### Create a .gitignore File
+Create a .gitignore file in the root directory of your R project. This file will specify which files and directories should not be pushed to GitHub.
+Example content for .gitignore:
+
+# History files
+.Rhistory
+
+
+# RStudio files
+.Rproj.user/
+
+# Specific files to ignore
+data/
+output/
+secrets.txt
+
+### Initialize local repo
+Change directory
+'cd C:/Users/micha/Football/Southsiders'
+
+Initialize directory
+'git init'
+
+If git initializes the directory as the 'master' instead of the 'main' branch, create and switch to the main Branch:
+Create a new branch named main and switch to it.
+'git checkout -b main'
+
+Add all changed or new files. Dont forget the dot, '.'.
+'git add .'
+
+Make initial commit
+'git commit -m "Initial commit"'
+
+Push to remote repo
+'git push origin main'
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
