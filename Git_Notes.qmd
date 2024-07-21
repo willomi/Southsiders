@@ -4,6 +4,16 @@ format: html
 editor: visual
 ---
 
+## SSH
+Windows Credential
+Internet or network address: git:https://github.com
+Username: willomi
+Password: '********'
+
+Check which SSH key is associated with which file with Git command.
+'cat ~/.ssh/id_ed25519.pub'
+
+
 ## Github Repo for Southsiers Fantasy Football
 
 Southsiders GitHub public repo, <https://github.com/willomi/Southsiders.git>.
